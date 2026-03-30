@@ -6,7 +6,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   // הגדרת הבסיס - החליפי את 'YOUR_REPO_NAME' בשם המאגר שלך בגיטהאב
   // אם האתר ירוץ על הדומיין הראשי (username.github.io), השאירי רק '/'
-  base: process.env.NODE_ENV === 'production' ? '/Twist/' : '/', 
+base: process.env.NODE_ENV === 'production' ? '/Twist/' : '/',
   logLevel: 'error',
   plugins: [
     base44({
