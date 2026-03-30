@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heebo: 'Heebo', sans-serif;
+    --font-rubik: 'Rubik', sans-serif;
+
+    /* Magazine palette: deep purple, teal, warm orange */
+    --background: 270 20% 97%;
+    --foreground: 270 40% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 270 40% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 40% 12%;
+
+    --primary: 270 55% 35%;          /* deep magazine purple */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 174 65% 38%;        /* teal */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 270 12% 93%;
+    --muted-foreground: 270 15% 48%;
+    --accent: 28 85% 52%;            /* warm orange */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 12% 86%;
+    --input: 270 12% 86%;
+    --ring: 270 55% 35%;
+    --chart-1: 270 55% 35%;
+    --chart-2: 174 65% 38%;
+    --chart-3: 28 85% 52%;
+    --chart-4: 0 72% 51%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 270 55% 35%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 270 55% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-heebo;
+    direction: rtl;
+  }
+}
+
+/* Magazine-style section label pill */
+.section-pill {
+  @apply inline-block text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full;
+}
